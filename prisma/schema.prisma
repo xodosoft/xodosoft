@@ -1,0 +1,93 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum JobType {
+  REMOTE
+  FULL_TIME
+  PART_TIME
+}
+
+enum JobStatus {
+  ACTIVE
+  INACTIVE
+}
+
+model Job {
+  id          String        @id @default(uuid())
+  title       String
+  description String
+  jobDetails  String
+  location    String
+  salaryMin   Int
+  salaryMax   Int
+  jobType     JobType
+  status      JobStatus     @default(ACTIVE)
+  createdAt   DateTime      @default(now())
+  Application Application[]
+}
+
+model Application {
+  id          String   @id @default(uuid())
+  jobId       String?
+  name        String
+  email       String
+  phone       String
+  resume      String
+  coverLetter String
+  appliedAt   DateTime @default(now())
+
+  job Job? @relation(fields: [jobId], references: [id], onDelete: Cascade)
+}
+
+model Service {
+  id             String   @id @default(uuid())
+  title          String
+  description    String
+  serviceDetails String
+  image          String
+  createdAt      DateTime @default(now())
+}
+
+model Category {
+  id       String    @id @default(uuid())
+  name     String    @unique
+  projects Project[]
+}
+
+model Project {
+  id                       String   @id @default(uuid())
+  image                    String
+  title                    String
+  description              String
+  headerImage              String
+  images                   String[]
+  projectDetails           String
+  optionalImagesOne        String[]
+  optionalDescriptionOne   String
+  optionalImagesTwo        String[]
+  optionalDescriptionTwo   String
+  optionalImagesThree      String[]
+  optionalDescriptionThree String
+  createdAt                DateTime @default(now())
+  categoryId               String
+  category                 Category @relation(fields: [categoryId], references: [id])
+}
+
+model User {
+  id       String @id @default(uuid())
+  name     String
+  email    String @unique
+  password String
+}
