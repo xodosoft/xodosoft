@@ -60,7 +60,7 @@ export default function Footer() {
                             <Link className="text-primary transition-colors hover:text-muted-foreground" href="/contact">Contact</Link>
                         </li>
                         <li>
-                            <Link className="text-primary transition-colors hover:text-muted-foreground" href="/quote">Get Quote</Link>
+                            <Link className="text-primary transition-colors hover:text-muted-foreground" href="/get-quote">Get Quote</Link>
                         </li>
                     </ul>
                 </div>
