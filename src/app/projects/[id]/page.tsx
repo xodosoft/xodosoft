@@ -46,7 +46,7 @@ function OptionalBlock({ description, images }: { description: string; images: s
     if (!hasDescription && !hasImages) return null;
 
     return (
-        <div className="px-4 md:px-6 lg:px-8 py-8 flex flex-col items-center gap-y-5">
+        <div className="px-4 md:px-6 lg:px-8 py-8 flex flex-col gap-y-5">
             {hasDescription && (
                 <div
                     className="prose max-w-none text-gray-700 text-sm/7 prose-li:leading-tight"
@@ -55,7 +55,7 @@ function OptionalBlock({ description, images }: { description: string; images: s
             )}
             {hasImages &&
                 images.map((src, index) => (
-                    <div key={index} className="w-full max-w-5xl">
+                    <div key={index} className="w-full max-w-5xl mx-auto">
                         <div className="relative w-full" style={{ aspectRatio: "auto" }}>
                             <Image
                                 src={src}
