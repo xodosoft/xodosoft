@@ -21,7 +21,7 @@ interface Project {
 
 export default function ProductShowcase() {
     const { categories, fetchCategories } = useCategoryStore();
-    const [selected, setSelected] = useState<{ id: string; name: string } | null>(null);
+    const [selected, setSelected] = useState<{ id: string | null; name: string }>({ id: null, name: "All" });
     const [projects, setProjects] = useState<Project[] | null>(null);
     const [loading, setLoading] = useState(false);
     const router = useRouter();
@@ -31,22 +31,16 @@ export default function ProductShowcase() {
         fetchCategories();
     }, []);
 
-    // Set default selected category once categories are fetched
-    useEffect(() => {
-        if (categories.length > 0 && !selected) {
-            const firstWithProjects = categories.find((c) => c.projects.length > 0);
-            if (firstWithProjects) setSelected(firstWithProjects);
-        }
-    }, [categories]);
-
     // Fetch products when selected category changes
     useEffect(() => {
-        if (!selected) return;
-
         const fetchProducts = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`/api/projects?categoryId=${selected.id}`);
+                let url = '/api/projects';
+                if (selected.id) {
+                    url += `?categoryId=${selected.id}`;
+                }
+                const response = await axios.get(url);
                 setProjects(response.data);
             } catch (error) {
                 console.error(error);
@@ -87,6 +81,15 @@ export default function ProductShowcase() {
                     },
                 }}
             >
+                {/* All button */}
+                <motion.button
+                    onClick={() => setSelected({ id: null, name: "All" })}
+                    className={`font-medium transition ${selected.id === null ? "text-[#62BCEA]" : "text-gray-600"}`}
+                    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+                >
+                    All
+                </motion.button>
+
                 {categories
                     .filter((c) => c.projects.length > 0)
                     .map((category) => (
@@ -150,6 +153,6 @@ export default function ProductShowcase() {
                         </Card>
                     ))}
             </div>
-        </section >
+        </section>
     );
 }
