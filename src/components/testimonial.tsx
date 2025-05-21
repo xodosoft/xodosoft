@@ -8,32 +8,32 @@ import Image from "next/image";
 
 const testimonials = [
     {
-        name: "",
-        role: "Managing Director, Ahmed Corporation",
+        name: "Faisal Ahmed",
+        role: "Managing Director, Ahmed Corporation",
         image: "/images/testimonials/01.jpg",
         rating: 4.5,
         comment:
             "Xodosoft's tailored ERP transformed our textile operations. Excellent industry insight and seamless support throughout.",
     },
     {
-        name: "",
-        role: "Director, Malik & Brothers",
+        name: "Imran Malik",
+        role: "Director, Malik & Brothers",
         image: "/images/testimonials/02.jpg",
         rating: 4,
         comment:
             "Xodosoft's logistics solution improved our workflows. Their expertise and commitment delivered truly impressive results.",
     },
     {
-        name: "",
-        role: "Director, Bling Development UAE",
+        name: "Sara Khan",
+        role: "Director, Bling Development UAE",
         image: "/images/testimonials/03.jpg",
         rating: 5,
         comment:
             "Xodosoft delivered a sleek, high-performance website that perfectly reflects our brand and exceeded expectations.",
     },
     {
-        name: "",
-        role: "Manager, Indus Towel",
+        name: "Bilal Shaikh",
+        role: "Manager, Indus Towel",
         image: "/images/testimonials/04.jpg",
         rating: 4.8,
         comment:
@@ -41,13 +41,14 @@ const testimonials = [
     },
     {
         name: "Anas Jawed",
-        role: "Director, SME Powers, UK",
+        role: "Director, SME Powers, UK",
         image: "/images/testimonials/05.jpg",
         rating: 3.8,
         comment:
             "Xodosoft crafted a strong brand identity and sleek website, perfectly capturing our vision with expert precision.",
     },
 ];
+
 
 const Rating = ({ rating }: { rating: number }) => (
     <div className="flex gap-1 text-yellow-500">
