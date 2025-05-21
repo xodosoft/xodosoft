@@ -26,7 +26,7 @@ const testimonials = [
     {
         name: "Malik Mansha",
         role: "Director, Malik & Brothers",
-        image: "/images/testimonials/02.jpg",
+        image: "/images/testimonials/07.svg",
         rating: 4,
         comment:
             "Xodosoft's logistics solution improved our workflows. Their expertise and commitment delivered truly impressive results.",
@@ -42,7 +42,7 @@ const testimonials = [
     {
         name: "Muhammed Rizwan",
         role: "Manager, Indus Towel",
-        image: "/images/testimonials/04.jpg",
+        image: "/images/testimonials/07.svg",
         rating: 4.8,
         comment:
             "Xodosoft’s customized ERP fit our textile needs perfectly. Their expertise and professionalism were truly outstanding.",
