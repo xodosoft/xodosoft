@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const testimonials = [
     {
-        name: "Furqan",
+        name: "Furqan Ahmed",
         role: "Managing Director, Ahmed Corporation",
         image: "/images/testimonials/01.jpg",
         rating: 4.5,
@@ -16,7 +16,7 @@ const testimonials = [
             "Xodosoft's tailored ERP transformed our textile operations. Excellent industry insight and seamless support throughout.",
     },
     {
-        name: "Imran Malik",
+        name: "Mansha Malik",
         role: "Director, Malik & Brothers",
         image: "/images/testimonials/02.jpg",
         rating: 4,
@@ -32,7 +32,7 @@ const testimonials = [
             "Xodosoft delivered a sleek, high-performance website that perfectly reflects our brand and exceeded expectations.",
     },
     {
-        name: "Bilal Shaikh",
+        name: "Muhammed Rizwan",
         role: "Manager, Indus Towel",
         image: "/images/testimonials/04.jpg",
         rating: 4.8,
