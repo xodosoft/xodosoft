@@ -32,7 +32,7 @@ const testimonials = [
             "Xodosoft's logistics solution improved our workflows. Their expertise and commitment delivered truly impressive results.",
     },
     {
-        name: "Sara Khan",
+        name: "Shahmeer Partner",
         role: "Director, Bling Development UAE",
         image: "/images/testimonials/03.jpg",
         rating: 5,
