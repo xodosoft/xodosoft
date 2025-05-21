@@ -9,7 +9,7 @@ import Image from "next/image";
 const testimonials = [
     {
         name: "Furqan Ahmed",
-        role: "Managing Director, Ahmed Corporation",
+        role: "Director, Ahmed Corporation",
         image: "/images/testimonials/01.jpg",
         rating: 4.5,
         comment:
@@ -24,7 +24,7 @@ const testimonials = [
             "Xodosoft’s POS transformed our retail operations—fast, reliable, and user-friendly, exceeding all expectations.",
     },
     {
-        name: "Mansha Malik",
+        name: "Malik Mansha",
         role: "Director, Malik & Brothers",
         image: "/images/testimonials/02.jpg",
         rating: 4,
@@ -32,8 +32,8 @@ const testimonials = [
             "Xodosoft's logistics solution improved our workflows. Their expertise and commitment delivered truly impressive results.",
     },
     {
-        name: "Shahmeer Partner",
-        role: "Director, Bling Development UAE",
+        name: "Shahmeer",
+        role: "Co-Founder, Bling Development UAE",
         image: "/images/testimonials/03.jpg",
         rating: 5,
         comment:
