@@ -117,7 +117,7 @@ export default function TestimonialSlider() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            className="flex-none w-full sm:w-1/2 lg:w-1/3 flex gap-x-4 pointer-events-none" // Add `flex` here
+                            className="flex-none w-full sm:w-1/2 lg:w-1/3 flex px-4 pointer-events-none" // Add `flex` here
                         >
                             <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 text-left border border-gray-200 dark:border-gray-700 flex-1 flex flex-col"> {/* Add `flex-1` and `flex-col` here */}
                                 <Rating rating={testimonial.rating} />
