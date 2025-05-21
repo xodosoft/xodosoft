@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const testimonials = [
     {
-        name: "Faisal Ahmed",
+        name: "Furqan",
         role: "Managing Director, Ahmed Corporation",
         image: "/images/testimonials/01.jpg",
         rating: 4.5,
