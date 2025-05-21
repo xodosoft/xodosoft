@@ -16,6 +16,14 @@ const testimonials = [
             "Xodosoft's tailored ERP transformed our textile operations. Excellent industry insight and seamless support throughout.",
     },
     {
+        name: "Ali Khan",
+        role: "Manager, Nisar Mart",
+        image: "/images/testimonials/06.jpg",
+        rating: 4.5,
+        comment:
+            "Xodosoft’s POS transformed our retail operations—fast, reliable, and user-friendly, exceeding all expectations.",
+    },
+    {
         name: "Mansha Malik",
         role: "Director, Malik & Brothers",
         image: "/images/testimonials/02.jpg",
