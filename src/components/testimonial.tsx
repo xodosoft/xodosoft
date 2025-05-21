@@ -8,52 +8,44 @@ import Image from "next/image";
 
 const testimonials = [
     {
-        name: "Raima Sen",
-        role: "Business Head",
+        name: "",
+        role: "Managing Director, Ahmed Corporation",
         image: "/images/testimonials/01.jpg",
         rating: 4.5,
         comment:
-            "Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis eligendi qui.",
+            "Xodosoft's tailored ERP transformed our textile operations. Excellent industry insight and seamless support throughout.",
     },
     {
-        name: "John Doe",
-        role: "Product Designer",
+        name: "",
+        role: "Director, Malik & Brothers",
         image: "/images/testimonials/02.jpg",
         rating: 4,
         comment:
-            "Great attention to detail and very user-friendly interface. Highly recommend!",
+            "Xodosoft's logistics solution improved our workflows. Their expertise and commitment delivered truly impressive results.",
     },
     {
-        name: "Emily Smith",
-        role: "Marketing Head",
+        name: "",
+        role: "Director, Bling Development UAE",
         image: "/images/testimonials/03.jpg",
         rating: 5,
         comment:
-            "Absolutely loved the service! The team was professional and the experience was seamless.",
+            "Xodosoft delivered a sleek, high-performance website that perfectly reflects our brand and exceeded expectations.",
     },
     {
-        name: "David Brown",
-        role: "CEO, TechCorp",
+        name: "",
+        role: "Manager, Indus Towel",
         image: "/images/testimonials/04.jpg",
         rating: 4.8,
         comment:
-            "Innovative approach and highly skilled team. Would love to collaborate again!",
+            "Xodosoft’s customized ERP fit our textile needs perfectly. Their expertise and professionalism were truly outstanding.",
     },
     {
-        name: "Sophia Lee",
-        role: "UX Designer",
+        name: "Anas Jawed",
+        role: "Director, SME Powers, UK",
         image: "/images/testimonials/05.jpg",
         rating: 3.8,
         comment:
-            "User-friendly experience with a touch of creativity. Loved working with them!",
-    },
-    {
-        name: "Michael Scott",
-        role: "Regional Manager",
-        image: "/images/testimonials/06.jpg",
-        rating: 5,
-        comment:
-            "Exceptional service and great attention to detail. Would recommend to everyone!",
+            "Xodosoft crafted a strong brand identity and sleek website, perfectly capturing our vision with expert precision.",
     },
 ];
 
