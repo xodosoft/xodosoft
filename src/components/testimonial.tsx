@@ -18,7 +18,7 @@ const testimonials = [
     {
         name: "Ali Khan",
         role: "Manager, Nisar Mart",
-        image: "/images/testimonials/06.jpg",
+        image: "/images/testimonials/07.svg",
         rating: 4.5,
         comment:
             "Xodosoft’s POS transformed our retail operations—fast, reliable, and user-friendly, exceeding all expectations.",
