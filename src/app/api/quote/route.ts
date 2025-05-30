@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
             })
         );
 
-        await sendEmail(email, "New Quote Form Submission", emailContent);
+        await sendEmail("anees@xodosoft.com", "New Quote Form Submission", emailContent);
 
         return NextResponse.json({ message: "Form submitted successfully", status: 201 });
     } catch (error) {
