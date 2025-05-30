@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
         const { name, email, subject, message } = parsedData.data;
         const emailContent = await render(ContactTemplate({ name, email, subject, message }));
 
-        await sendEmail(email, "New Contact Form Submission", emailContent);
+        await sendEmail("anees@xodosoft.com", "New Contact Form Submission", emailContent);
 
         return NextResponse.json({ message: "Form submitted successfully", status: 201 });
     } catch (error) {
