@@ -85,7 +85,7 @@ export default function Footer() {
                         <li className="flex items-center">
                             <span><Mail className="mr-3" /></span>
                             <span>
-                                <a href="mailto:xodosoft@gmail.com">xodosoft@gmail.com</a>
+                                <a href="mailto:contact@xodosoft.com">contact@xodosoft.com</a>
                             </span>
                         </li>
                     </ul>
