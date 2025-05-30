@@ -31,8 +31,8 @@ export default function Contact() {
                             <span className="inline-block p-4 bg-white rounded-full shadow-lg">
                                 <Mail className="text-blue-500 filter drop-shadow-lg" />
                             </span>
-                            <Link className="transition hover:text-blue-500" href="mailto:xodosoft@gmailcom">
-                                xodosoft@gmail.com
+                            <Link className="transition hover:text-blue-500" href="mailto:contact@xodosoft.com">
+                                contact@xodosoft.com
                             </Link>
                         </div>
                     </div>
