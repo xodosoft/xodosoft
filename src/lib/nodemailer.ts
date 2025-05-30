@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export const transporter = nodemailer.createTransport({
+export const transporter = nodemailer.createTransport({ 
     host: "smtp.hostinger.com",
     port: 465,
     secure: true,
